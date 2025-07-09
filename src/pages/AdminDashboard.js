@@ -132,7 +132,7 @@ const AdminDashboard = () => {
     try {
       await API.patch(`complaints/${editComplaint.id}/`, {
         ...editForm,
-        user: editComplaint.user, // include existing user ID
+        user: editComplaint.user, 
       });
       setEditComplaint(null);
       fetchAll();
