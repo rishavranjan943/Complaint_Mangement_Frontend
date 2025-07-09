@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Login from './pages/Login';
-import Register from './pages/Register';
 import UserDashboard from './pages/UserDashboard';
 import StatusPage from './pages/StatusPage';
 import StaffDashboard from './pages/StaffDashboard';
@@ -14,7 +13,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
         <Route path="/user" element={<UserDashboard />} />
         <Route path="/status" element={<StatusPage />} />
         <Route path="/staff" element={<StaffDashboard />} />
